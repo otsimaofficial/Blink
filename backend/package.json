@@ -1,0 +1,14 @@
+{
+  "name": "blink-backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "api_routes.js",
+  "scripts": {
+    "start": "node api_routes.js",
+    "test": "mocha ../tests/api_tests.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
