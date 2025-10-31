@@ -19,19 +19,19 @@ const HeroSection = () => {
       img: "/images/salah.png",
       alt: "Sports",
       bg: "/images/soccerPitch.png",
-      icon: "/icons/Sports.svg",
+      icon: "/icons/heroSection/Sports.svg",
     },
     {
       img: "/images/maskedMan.png",
       alt: "eSports",
       bg: "/images/gamebackground.png",
-      icon: "/icons/eSport.svg",
+      icon: "/icons/heroSection/eSport.svg",
     },
     {
       img: "/images/salah.png",
       alt: "Sports",
       bg: "/images/soccerPitch.png",
-      icon: "/icons/Sports.svg",
+      icon: "/icons/heroSection/Sports.svg",
     },
   ];
 
@@ -57,23 +57,23 @@ const HeroSection = () => {
           {/* Features */}
           <section className="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 text-sm sm:text-base">
             <div className="flex items-center gap-2">
-              <img src="/icons/KYC.svg" alt="No Kyc" className="w-4 h-4 sm:w-5 sm:h-5" /> 
+              <img src="/icons/heroSection/KYC.svg" alt="No Kyc" className="w-4 h-4 sm:w-5 sm:h-5" /> 
               No Kyc
             </div>
             <div className="flex items-center gap-2">
-              <img src="/icons/Freebets.svg" alt="Freebets" className="w-4 h-4 sm:w-5 sm:h-5" />
+              <img src="/icons/heroSection/Freebets.svg" alt="Freebets" className="w-4 h-4 sm:w-5 sm:h-5" />
               Freebets
             </div>
             <div className="text-red-600 font-bold">TestNet</div>
             <div className="flex items-center gap-2">
-              <img src="/icons/gift.svg" alt="Gifts" className="w-4 h-4 sm:w-5 sm:h-5" />
+              <img src="/icons/heroSection/gift.svg" alt="Gifts" className="w-4 h-4 sm:w-5 sm:h-5" />
               Gifts
             </div>
           </section>
           
           {/* Main Heading */}
           <section>
-            <p className="font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight">
+            <p className="font-bold text-2xl sm:text-3xl lg:text-3xl leading-tight">
               Welcome to the world of On-chain <br className="hidden sm:block" /> 
               sports Betting, Built On{" "}
               <span className="text-red-500">LINERA</span>
@@ -147,7 +147,7 @@ const HeroSection = () => {
               </div>
               <div className="bg-white/15 rounded-full p-2 flex items-center gap-2 cursor-pointer hover:scale-105 transition duration-300">
                 <span>
-                  <img src="/icons/arrow.svg" alt="arrow" className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <img src="/icons/heroSection/arrow.svg" alt="arrow" className="w-3 h-3 sm:w-4 sm:h-4" />
                 </span>
               </div>
             </div>
