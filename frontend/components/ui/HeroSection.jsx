@@ -17,7 +17,7 @@ const HeroSection = () => {
   const [activeSection, setActiveSection] = useState(1);
 
   return (
-    <div className="w-full text-white max-w-[1440px] px-8 pb-10 ">
+    <div className="w-full text-white max-w-[1440px] px-8 pb-10 mx-auto ">
       <section
         className="mx-auto flex justify-between px-5 pt-8 mt-10 rounded-2xl relative overflow-hidden"
         style={{
