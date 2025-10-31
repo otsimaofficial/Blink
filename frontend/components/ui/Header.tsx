@@ -1,5 +1,13 @@
+import React from "react";
+import { useState } from "react";
+import SignUpModal from "../SignUpModal";
+
+
 export function Header() {
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
+  
   return (
+    <>
     <div className="w-full bg-gradient-to-r from-[#120411] to-[#250a23] text-white font-semibold">
       <header className="max-w-[1440px] mx-auto px-8 py-6 flex justify-between items-center">
         {/* Navigation Menu */}
@@ -33,7 +41,9 @@ export function Header() {
               <img src="./icons/new-add-funds.svg" alt="add funds" className="mt-1"/>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-red-500 via-[#A157FF] to-red-500 p-2 rounded-lg">
+          <button
+          onClick={() => setIsSignUpOpen(true)}
+           className="bg-gradient-to-r from-red-500 via-[#A157FF] to-red-500 p-2 rounded-lg">
             Sign up
           </button>
           
@@ -48,5 +58,11 @@ export function Header() {
         </nav>
       </header>
     </div>
+    {/* 🔹 Modal */}
+      {React.createElement(SignUpModal as any, {
+        isOpen: isSignUpOpen,
+        onClose: () => setIsSignUpOpen(false),
+      })}
+    </>
   );
 }
