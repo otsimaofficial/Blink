@@ -20,7 +20,7 @@ export function Header() {
           ].map((item) => (
             <div
               key={item.alt}
-              className="bg-white/15 rounded-lg p-2 flex items-center gap-2 cursor-pointer"
+              className="bg-white/15 rounded-lg p-2 flex items-center gap-2 cursor-pointer hover:scale-105"
             >
               <img src={item.icon} alt={item.alt} className="w-6 h-6" />
               {item.label && <p>{item.label}</p>}
@@ -41,9 +41,7 @@ export function Header() {
               <img src="./icons/new-add-funds.svg" alt="add funds" className="mt-1"/>
             </div>
           </div>
-          <button
-          onClick={() => setIsSignUpOpen(true)}
-           className="bg-gradient-to-r from-red-500 via-[#A157FF] to-red-500 p-2 rounded-lg">
+          <button className="bg-gradient-to-r from-red-500 via-[#A157FF] to-red-500 p-2 rounded-lg hover:scale-105 cursor-pointer">
             Sign up
           </button>
           
@@ -51,7 +49,7 @@ export function Header() {
             { icon: "./icons/chat.svg", alt: "chat" },
             { icon: "./icons/Nigeria.svg", alt: "nigeria" }
           ].map((item) => (
-            <div key={item.alt} className="bg-white/15 rounded-lg p-2 cursor-pointer">
+            <div key={item.alt} className="bg-white/15 rounded-lg p-2 cursor-pointer hover:scale-105">
               <img src={item.icon} alt={item.alt} className="w-6 h-6" />
             </div>
           ))}
@@ -59,10 +57,10 @@ export function Header() {
       </header>
     </div>
     {/* 🔹 Modal */}
-      {React.createElement(SignUpModal as any, {
-        isOpen: isSignUpOpen,
-        onClose: () => setIsSignUpOpen(false),
-      })}
+      <SignUpModal
+      isOpen={isSignUpOpen}
+      onClose={() => setIsSignUpOpen(false)}
+    />
     </>
   );
 }
