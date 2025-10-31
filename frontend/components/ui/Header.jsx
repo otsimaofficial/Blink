@@ -5,10 +5,22 @@ export function Header() {
         {/* Navigation Menu */}
         <nav className="flex gap-4">
           {[
-            { icon: "./icons/Home.svg", alt: "home" },
-            { icon: "./icons/Sports.svg", alt: "sports", label: "Sports" },
-            { icon: "./icons/Casino.svg", alt: "casino", label: "Games" },
-            { icon: "./icons/More.svg", alt: "more", label: "More" }
+            { icon: "./icons/heroSection/Home.svg", alt: "home" },
+            {
+              icon: "./icons/heroSection/Sports.svg",
+              alt: "sports",
+              label: "Sports",
+            },
+            {
+              icon: "./icons/heroSection/Casino.svg",
+              alt: "casino",
+              label: "Games",
+            },
+            {
+              icon: "./icons/heroSection/More.svg",
+              alt: "more",
+              label: "More",
+            },
           ].map((item) => (
             <div
               key={item.alt}
@@ -22,26 +34,38 @@ export function Header() {
 
         {/* CTA Buttons */}
         <nav className="flex items-center gap-4">
-         
           <div className="bg-white/15 rounded-lg p-2 flex items-center gap-2 cursor-pointer">
-            <p>B<span className="text-red-500">P</span></p>
+            <p>
+              B<span className="text-red-500">P</span>
+            </p>
             <button className="flex items-center gap-1 cursor-pointer">
               0.00
-              <img src="/icons/arrowDown.svg" alt="dropdown" className="mt-1" />
+              <img
+                src="/icons/heroSection/arrowDown.svg"
+                alt="dropdown"
+                className="mt-1"
+              />
             </button>
             <div className="bg-gradient-to-b from-[#7747E5] via-[#AC3ABE] to-[#E02D98] flex items-center rounded-lg">
-              <img src="./icons/new-add-funds.svg" alt="add funds" className="mt-1"/>
+              <img
+                src="./icons/heroSection/new-add-funds.svg"
+                alt="add funds"
+                className="mt-1"
+              />
             </div>
           </div>
           <button className="bg-gradient-to-r from-red-500 via-[#A157FF] to-red-500 p-2 rounded-lg hover:scale-105 cursor-pointer">
             Sign up
           </button>
-          
+
           {[
-            { icon: "./icons/chat.svg", alt: "chat" },
-            { icon: "./icons/Nigeria.svg", alt: "nigeria" }
+            { icon: "./icons/heroSection/chat.svg", alt: "chat" },
+            { icon: "./icons/heroSection/Nigeria.svg", alt: "nigeria" },
           ].map((item) => (
-            <div key={item.alt} className="bg-white/15 rounded-lg p-2 cursor-pointer hover:scale-105">
+            <div
+              key={item.alt}
+              className="bg-white/15 rounded-lg p-2 cursor-pointer hover:scale-105"
+            >
               <img src={item.icon} alt={item.alt} className="w-6 h-6" />
             </div>
           ))}

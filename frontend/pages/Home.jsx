@@ -1,3 +1,4 @@
+import FilterNav from "../components/ui/filterNav";
 import { Header } from "../components/ui/Header";
 import HeroSection from "../components/ui/HeroSection";
 
@@ -6,6 +7,7 @@ export default function Home() {
         <div className="mx-auto bg-gradient-to-r from-[#120411] to-[#250a23]">
              <Header/>
              <HeroSection/>
+             <FilterNav/>
         </div>
     );
 }
