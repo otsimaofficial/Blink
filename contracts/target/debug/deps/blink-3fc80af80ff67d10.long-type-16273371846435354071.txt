@@ -1,0 +1,1 @@
+MapView<ViewContext<(), linera_sdk::KeyValueStore>, std::string::String, RegisterView<ViewContext<(), linera_sdk::KeyValueStore>, u64>>
