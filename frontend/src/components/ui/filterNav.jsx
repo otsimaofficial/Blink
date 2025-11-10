@@ -196,7 +196,7 @@ const FilterNav = () => {
             onClick={handleNext}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6 bg-white/20 hover:bg-white/30 rounded-full p-4 z-10  transition-colors "
           >
-            <img src="/icons/heroSection/arrow.svg" className='w-3' alt="" srcset="" />
+            <img src="/icons/heroSection/arrow.svg" className='w-3' alt="" />
            
           </button>
         )}

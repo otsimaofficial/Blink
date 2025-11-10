@@ -1,4 +1,5 @@
 import FilterNav from "../components/ui/filterNav";
+import FilterNavTwo from "../components/ui/filternavTwo";
 import { Header } from "../components/ui/Header";
 import HeroSection from "../components/ui/HeroSection";
 
@@ -8,6 +9,7 @@ export default function Home() {
              <Header/>
              <HeroSection/>
              <FilterNav/>
+             <FilterNavTwo/>
         </div>
     );
 }
