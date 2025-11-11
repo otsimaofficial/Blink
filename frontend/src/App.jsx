@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home.jsx'
-import Dashboard from '../pages/Dashboard/Dashboard.jsx'
-import DashboardHistory from '../pages/Dashboard/DashboardHistory.jsx';
+import Dashboard from './pages/Dashboard/Dashboard.jsx'
+import DashboardHistory from './pages/Dashboard/DashboardHistory.jsx';
 
 function App() {
 
